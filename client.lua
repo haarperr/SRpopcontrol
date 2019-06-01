@@ -48,66 +48,66 @@ Citizen.CreateThread(function()
 			playersConnected = playersConnected + 1
 			ESX.PlayerData = ESX.GetPlayerData()
 		end
-		        print"playerconnected"
-				print (playersConnected)
+		                --print"playerconnected"
+				--print (playersConnected)
 				ESX.TriggerServerCallback('esx_ambulancejob:getDeathStatus', function(isDead)
 				if Config.usingesx and isDead then
 				count = (0.0)
 				vcount = (0.0)
 				pvcount = (0.0)
-     print "Pedpopdead"
-   print (count)
-   print (vcount) 
-   print (pvcount)	
+   --print "Pedpopdead"
+   --print (count)
+   --print (vcount) 
+   --print (pvcount)	
 				end
 	
 				if not isDead and playersConnected > 0 and playersConnected < 6 then 
 				count = (Config.density.peds1)
 				vcount = (Config.density.vehicles1)
 				pvcount = (Config.density.pvehicles1)
-    print "Pedpop1"
-   print (count)
-   print (vcount) 
-   print (pvcount)
+   --print "Pedpop1"
+  -- print (count)
+   --print (vcount) 
+  -- print (pvcount)
 				end
 
 				if not isDead and playersConnected > 5 and playersConnected < 11 then 
 				count = (Config.density.peds2)
 				vcount = (Config.density.vehicles2)
 				pvcount = (Config.density.pvehicles2)
-    print "Pedpop2"
-   print (count)
-   print (vcount) 
-   print (pvcount)
+   -- print "Pedpop2"
+   --print (count)
+   --print (vcount) 
+   --print (pvcount)
 				end
 
 				if not isDead and playersConnected > 10 and playersConnected < 16 then 
 				count = (Config.density.peds3)
 				vcount = (Config.density.vehicles3)
 				pvcount = (Config.density.pvehicles3)
-    print "Pedpop3"
-   print (count)
-   print (vcount) 
-   print (pvcount)
+   -- print "Pedpop3"
+   --print (count)
+  -- print (vcount) 
+   --print (pvcount)
 				end
 
 				if not isDead and playersConnected > 15 and playersConnected < 21 then 
 				count = (Config.density.peds4)
 				vcount = (Config.density.vehicles4)
 				pvcount = (Config.density.pvehicles4)
-    print "Pedpop4"
-   print (count)
-   print (vcount) 
-   print (pvcount)
+   --print "Pedpop4"
+   --print (count)
+   --print (vcount) 
+   --print (pvcount)
 				end
 				if not isDead and playersConnected > 20 then 
 				count = (Config.density.peds5)
 				vcount = (Config.density.vehicles5)
 				pvcount = (Config.density.pvehicles5)				
-     print "Pedpop5"
-	print (count)
-   print (vcount) 
-   print (pvcount)
+   --print "Pedpop5"
+   --print (count)
+   --print (vcount) 
+   --print (pvcount)
 			end
 		end)
 	end
