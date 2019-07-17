@@ -50,16 +50,14 @@ Citizen.CreateThread(function()
 		end
 		                --print"playerconnected"
 				--print (playersConnected)
+			if Config.usingesx and isDead then
 				ESX.TriggerServerCallback('esx_ambulancejob:getDeathStatus', function(isDead)
-				if Config.usingesx and isDead then
+				
 				count = (0.0)
 				vcount = (0.0)
 				pvcount = (0.0)
-   --print "Pedpopdead"
-   --print (count)
-   --print (vcount) 
-   --print (pvcount)	
-				end
+
+			end
 	
 				if not isDead and playersConnected > 0 and playersConnected < 6 then 
 				count = (Config.density.peds1)
